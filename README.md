@@ -12,7 +12,7 @@ Calculated Columns: Added and calculated total_cost, total_price, and profit to 
 
 Junk Dimension: Created a junk dimension to manage and consolidate miscellaneous payment types and related attributes.
 
-The data flow was automated with two separate master jobs for initial and delta loads, ensuring the core schema remains up-to-date with the latest sales information. Both the master jobs have their own tranformations. Most of them are the same and being resused but the Staging Job within the Master ETL job varies in the case of delta and initial load obviously, as the last load variable had to be a value such that all data would be extracted in the case of itinial load.
+The data flow was automated with two separate master jobs for initial and delta loads, ensuring the core schema remains up-to-date with the latest sales information. Both the master jobs have their own tranformations. Most of them are the same and being resused but the Staging Job within the Master ETL job varies in the case of delta and initial load obviously, as the last load variable had to be a value such that all data would be extracted in the case of initial load.
 
 
 
